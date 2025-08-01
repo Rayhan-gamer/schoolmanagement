@@ -99,7 +99,7 @@ app.get('/student/:id/gpa', async (req, res) => {
     ON rt.subject_id=s.id 
     WHERE r.student_id=(SELECT st.id FROM student st WHERE st.id=$1);
   `, [req.params.id]);
-  res.json(result.rows);
+  res.json(result.rows);  
 });
 
 // Get Guardians
