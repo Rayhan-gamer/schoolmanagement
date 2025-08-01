@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with full-page background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*background-image: url('/homebg.png');/* Ensure this is in public/homebg.jpg */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Navbar styling */
+nav {
+  background: rgba(0, 0, 80, 0.85);
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+}
+
+nav a, nav button {
+  background: #fffb;
+  color: #111;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav button:hover {
+  background: #fff;
+}
+
+/* Centered main container */
+.page-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Form elements */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #002299;
+}
+
+/* Dashboard table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+table th {
+  background: #0033cc;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a, nav button {
+    margin: 0.5rem 0 0;
+  }
+
+  .page-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

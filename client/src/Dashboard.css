@@ -1,0 +1,127 @@
+.dashboard {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.edit-btn {
+  background-color: #fbbf24;
+}
+
+.edit-btn:hover {
+  background-color: #f59e0b;
+}
+
+.save-btn {
+  background-color: #22c55e;
+}
+
+.save-btn:hover {
+  background-color: #16a34a;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #0e0d0d;
+}
+
+.styled-table th {
+  background-color: #5c98c9;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+.admin-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #f4f4f4;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.admin-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.admin-form input,
+.admin-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.admin-form .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
